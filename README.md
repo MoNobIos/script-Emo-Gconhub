@@ -2,4 +2,4 @@
 
 javascript for add emo
 
-edit from...
+edit from https://github.com/b4lmung/EmoGcon
