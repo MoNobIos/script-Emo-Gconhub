@@ -80,7 +80,7 @@ var text = '<div>'
          + '<img id=\'masaka\' width=\'45\' height=\'45\' src=\'http://i.imgur.com/hg4HaI5.jpg?1\' />'
          + '<img id=\'lnwgame\' width=\'45\' height=\'45\' src=\'http://i.imgur.com/kErOcnL.jpg\' />'
          + '<img id=\'YokoTaro\' width=\'45\' height=\'45\' src=\'http://i.imgur.com/0Qk8EK3.png\' />'
-       	 + '<img id=\'MoNoblos\' width=\'45\' height=\'45\' src=\'http://i.imgur.com/0Qk8EK3.png\' />'
+       	 //+ '<img id=\'MoNoblos\' width=\'45\' height=\'45\' src=\'http://i.imgur.com/0Qk8EK3.png\' />'
        
         + '</div>';
 
@@ -98,7 +98,7 @@ document.getElementById('gif1').addEventListener('click', clickGif1, false);
 document.getElementById('masaka').addEventListener('click', clickMasaka, false);
 document.getElementById('lnwgame').addEventListener('click', clickLnwGame, false);
 document.getElementById('YokoTaro').addEventListener('click', clickYokoTaro, false);
-document.getElementById('MoNoblos').addEventListener('click', clickMoNoblos, false);
+//document.getElementById('MoNoblos').addEventListener('click', clickMoNoblos, false);
 
 var script = document.createElement('script');    // create the script element
 script.innerHTML = 'function insert(e){var t="[img]"+e+"[/img]",a=document.getElementById("message"),c=a.scrollTop,l=0,n=a.selectionStart||"0"==a.selectionStart?"ff":document.selection?"ie":!1;if("ie"==n){a.focus();var r=document.selection.createRange();r.moveStart("character",-a.value.length),l=r.text.length}else"ff"==n&&(l=a.selectionStart);var o=a.value.substring(0,l),s=a.value.substring(l,a.value.length);if(a.value=o+t+s,l+=t.length,"ie"==n){a.focus();var r=document.selection.createRange();r.moveStart("character",-a.value.length),r.moveStart("character",l),r.moveEnd("character",0),r.select()}else"ff"==n&&(a.selectionStart=l,a.selectionEnd=l,a.focus());a.scrollTop=c}';
