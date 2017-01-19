@@ -79,7 +79,7 @@ var text = '<div>'
          + '<img id=\'masaka\' width=\'45\' height=\'45\' src=\'http://i.imgur.com/hg4HaI5.jpg?1\' />'
          + '<img id=\'lnwgame\' width=\'45\' height=\'45\' src=\'http://i.imgur.com/kErOcnL.jpg\' />'
          + '<img id=\'YokoTaro\' width=\'45\' height=\'45\' src=\'http://i.imgur.com/0Qk8EK3.png\' />'
-       	 //+ '<img id=\'MoNoblos\' width=\'45\' height=\'45\' src=\'http://i.imgur.com/0Qk8EK3.png\' />'
+       	 + '<img id=\'MoNoblos\' width=\'45\' height=\'45\' src=\'http://i.imgur.com/0Qk8EK3.png\' />'
        
         + '</div>';
 
