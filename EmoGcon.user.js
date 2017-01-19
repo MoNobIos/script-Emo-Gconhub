@@ -58,7 +58,7 @@ function clickYokoTaro(zEvent){
 
 //my code
 function clickMoNoblos(zEvent){
-     document.getElementById('form-block-emo').innerHTML = '<img onclick=\'javascript:insert("https://media.giphy.com/media/l0Ex4d4ckoHMpCN4A/giphy.gif");\' width=\'50\' height=\'50\' src=\'http://i.imgur.com/0Qk8EK3.png\'/>
+     document.getElementById('form-block-emo').innerHTML = '<img onclick=\'javascript:insert("https://media.giphy.com/media/l0Ex4d4ckoHMpCN4A/giphy.gif");\' width=\'50\' height=\'50\' src=\'http://i.imgur.com/0Qk8EK3.png\'/>'
  }
 //=============================================================================================================================
 
