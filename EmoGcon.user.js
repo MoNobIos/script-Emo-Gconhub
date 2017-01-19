@@ -1,3 +1,14 @@
+// ==UserScript==
+// @name        EmoGcon
+// @namespace   gconhub.com
+// @include     http://gconhub.com/*
+// @include     http://www.gconhub.com/*
+// @version     2.0.8
+// @downloadURL https://github.com/b4lmung/EmoGcon/raw/master/EmoGcon.user.js
+// @updateURL   https://github.com/b4lmung/EmoGcon/raw/master/EmoGcon.meta.js
+// @grant       none
+// ==/UserScript==
+
 
 function clickKanade(zEvent) {
   //insert('hello world');
@@ -45,6 +56,12 @@ function clickYokoTaro(zEvent){
      document.getElementById('form-block-emo').innerHTML = '<img onclick=\'javascript:insert("http://i.imgur.com/0Qk8EK3.png");\' width=\'50\' height=\'50\' src=\'http://i.imgur.com/0Qk8EK3.png\'/><img onclick=\'javascript:insert("http://i.imgur.com/bf0dw8H.png");\' width=\'50\' height=\'50\' src=\'http://i.imgur.com/bf0dw8H.png\'/><img onclick=\'javascript:insert("http://i.imgur.com/rbCR2Ny.png");\' width=\'50\' height=\'50\' src=\'http://i.imgur.com/rbCR2Ny.png\'/><img onclick=\'javascript:insert("http://i.imgur.com/pmo3LsS.jpg");\' width=\'50\' height=\'50\' src=\'http://i.imgur.com/pmo3LsS.jpg\'/><img onclick=\'javascript:insert("http://i.imgur.com/55xgJoN.jpg");\' width=\'50\' height=\'50\' src=\'http://i.imgur.com/55xgJoN.jpg\'/><img onclick=\'javascript:insert("http://i.imgur.com/xpv8uOg.jpg");\' width=\'50\' height=\'50\' src=\'http://i.imgur.com/xpv8uOg.jpg\'/><img onclick=\'javascript:insert("http://i.imgur.com/rzPd1ZT.gif");\' width=\'50\' height=\'50\' src=\'http://i.imgur.com/rzPd1ZT.gif\'/><img onclick=\'javascript:insert("http://i.imgur.com/JbHMPCu.gif");\' width=\'50\' height=\'50\' src=\'http://i.imgur.com/JbHMPCu.gif\'/><img onclick=\'javascript:insert("http://i.imgur.com/hV1ILxG.jpg");\' width=\'50\' height=\'50\' src=\'http://i.imgur.com/hV1ILxG.jpg\'/><img onclick=\'javascript:insert("http://i.imgur.com/hlJXEiQ.jpg");\' width=\'50\' height=\'50\' src=\'http://i.imgur.com/hlJXEiQ.jpg\'/><img onclick=\'javascript:insert("http://i.imgur.com/vfzw7ZS.jpg");\' width=\'50\' height=\'50\' src=\'http://i.imgur.com/vfzw7ZS.jpg\'/><img onclick=\'javascript:insert("http://i.imgur.com/qGwNN6V.png");\' width=\'50\' height=\'50\' src=\'http://i.imgur.com/qGwNN6V.png\'/><img onclick=\'javascript:insert("http://i.imgur.com/C0la2og.jpg");\' width=\'50\' height=\'50\' src=\'http://i.imgur.com/C0la2og.jpg\'/><img onclick=\'javascript:insert("http://i.imgur.com/BlVohIk.jpg");\' width=\'50\' height=\'50\' src=\'http://i.imgur.com/BlVohIk.jpg\'/><img onclick=\'javascript:insert("http://i.imgur.com/srKUb6w.jpg");\' width=\'50\' height=\'50\' src=\'http://i.imgur.com/srKUb6w.jpg\'/><img onclick=\'javascript:insert("http://i.imgur.com/vz421Wv.jpg");\' width=\'50\' height=\'50\' src=\'http://i.imgur.com/vz421Wv.jpg\'/>';
 }
 
+//my code
+function clickMoNoblos(zEvent){
+     document.getElementById('form-block-emo').innerHTML = '<img onclick=\'javascript:insert("https://media.giphy.com/media/l0Ex4d4ckoHMpCN4A/giphy.gif");\' width=\'50\' height=\'50\' src=\'http://i.imgur.com/0Qk8EK3.png\'/>
+ }
+//=============================================================================================================================
+
 
 var emolist = document.getElementById('input-option-emoticon');
 
@@ -62,7 +79,8 @@ var text = '<div>'
          + '<img id=\'gif1\' width=\'45\' height=\'45\' src=\'http://i.imgur.com/iTs0npB.gif\' />'
          + '<img id=\'masaka\' width=\'45\' height=\'45\' src=\'http://i.imgur.com/hg4HaI5.jpg?1\' />'
          + '<img id=\'lnwgame\' width=\'45\' height=\'45\' src=\'http://i.imgur.com/kErOcnL.jpg\' />'
-        + '<img id=\'YokoTaro\' width=\'45\' height=\'45\' src=\'http://i.imgur.com/0Qk8EK3.png\' />'
+         + '<img id=\'YokoTaro\' width=\'45\' height=\'45\' src=\'http://i.imgur.com/0Qk8EK3.png\' />'
+       	 + '<img id=\'MoNoblos\' width=\'45\' height=\'45\' src=\'http://i.imgur.com/0Qk8EK3.png\' />'
        
         + '</div>';
 
@@ -80,6 +98,7 @@ document.getElementById('gif1').addEventListener('click', clickGif1, false);
 document.getElementById('masaka').addEventListener('click', clickMasaka, false);
 document.getElementById('lnwgame').addEventListener('click', clickLnwGame, false);
 document.getElementById('YokoTaro').addEventListener('click', clickYokoTaro, false);
+document.getElementById('MoNoblos').addEventListener('click', clickMoNoblos, false);
 
 var script = document.createElement('script');    // create the script element
 script.innerHTML = 'function insert(e){var t="[img]"+e+"[/img]",a=document.getElementById("message"),c=a.scrollTop,l=0,n=a.selectionStart||"0"==a.selectionStart?"ff":document.selection?"ie":!1;if("ie"==n){a.focus();var r=document.selection.createRange();r.moveStart("character",-a.value.length),l=r.text.length}else"ff"==n&&(l=a.selectionStart);var o=a.value.substring(0,l),s=a.value.substring(l,a.value.length);if(a.value=o+t+s,l+=t.length,"ie"==n){a.focus();var r=document.selection.createRange();r.moveStart("character",-a.value.length),r.moveStart("character",l),r.moveEnd("character",0),r.select()}else"ff"==n&&(a.selectionStart=l,a.selectionEnd=l,a.focus());a.scrollTop=c}';
